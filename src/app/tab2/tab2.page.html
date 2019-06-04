@@ -15,4 +15,14 @@
     <tr> <a href="https://wildleoknight.wixsite.com/wildleoknight"><ion-img src="/assets/gallery-imgs/MiniTresh.gif"></ion-img></a></tr>
     
   </td>
-</table></ion-content>
+</table>
+
+<img [src]="currentImage" *ngIf="currentImage">
+
+<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="takePicture()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+</ion-fab>
+
+</ion-content>
